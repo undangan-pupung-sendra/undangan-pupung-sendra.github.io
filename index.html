@@ -43,6 +43,8 @@
 		type='text/css'>
 	<link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Borel&display=swap" rel="stylesheet">
+	
+
 
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
@@ -69,23 +71,29 @@
 	<![endif]-->
 
 	<style>
+		@font-face {
+			font-family: 'seasons';
+			src: url('fonts/seasons.otf');
+		}
+
+
 		.purple-invite-container {
 			text-align: center;
 			font-size: 2em;
-			font-family: 'Borel', serif;
+			font-family: 'seasons', serif;
 			font-weight: 700;
 			padding: 0 1em;
 		}
 
 		.purple-invite-btn-wrapper {
 			text-align: center;
-			margin-top: 2em;
+			margin-top: 1em;
 		}
 
 		.purple-invite-btn {
 			background: #828282;
 			border: none;
-			padding-top: 0.7em;
+			padding-top: 0.2em;
 			padding-bottom: 0em;
 			padding-left: 1.5em;
 			padding-right: 1.5em;
@@ -96,6 +104,38 @@
 			font-family: inherit;
 			font-weight: 700;
 		}
+
+		 #fh5co-event .event-wrap h3 {
+			
+			color: #3e1058;
+			border-bottom: #3e1058	 2px solid;
+		}
+
+		#fh5co-event .event-wrap span {
+			color: #3e1058;
+		}
+
+		#fh5co-event .event-wrap p {
+			color: #3e1058;
+		}
+
+		#fh5co-event .event-wrap i {
+			color: #3e1058;
+		}
+		#fh5co-event .event-wrap {
+			border: 2px solid #3e1058;
+		}
+
+		#fh5co-event .fh5co-heading span {
+			color: #3e1058 !important;
+			font-size: 2em !important;
+		}
+
+		#fh5co-couple-story .fh5co-heading span {
+			color: #3e1058 !important;
+			font-size: 2em !important;
+		}
+
 	</style>
 
 </head>
@@ -109,10 +149,8 @@
 			Kepada
 			<br><br>
 			<div id="name"></div>
-			<br>
-			di tempat
-			<br>
-			<div class="purple-invite-btn-wrapper">
+			
+						<div class="purple-invite-btn-wrapper">
 				<button class="purple-invite-btn">Buka</button>
 			</div>
 		</div>
@@ -124,8 +162,8 @@
 	<div class="fh5co-loader"></div>
 
 	<div id="page">
-	<header id="fh5co-header" class="fh5co-cover" role="banner"
-			style=" height: 90vh; background-image:url(images/wed1.jpg); background-position: 0 0px;" 
+		<header id="fh5co-header" class="fh5co-cover" role="banner"
+			style=" height: 90vh; background-image:url(images/wed1.jpg); background-position: 0 0px;"
 			data-stellar-background-ratio="0.5">
 			<style>
 				@media screen and (max-width: 769px) {
@@ -142,15 +180,16 @@
 						<div class="display-t">
 							<div class="display-tc animate-box" data-animate-effect="fadeIn">
 								<h1 style="font-size: 30px; height: 200px; margin-top: 100px; ">Undangan Pernikahan</h1>
-								
+
 								<h1 style="font-size: 60px;">Pupung</h1>
 								<h1 style="font-size: 60px;">&amp;</h1>
 								<h1 style="font-size: 60px;">Sendra</h1>
 								<!-- <p><a href="#" class="btn btn-default btn-sm">Save the date</a></p> -->
-								<p style="font-size: 20px; color: #fff; margin-top: 100px; animation: bounce 2s infinite; -webkit-animation: bounce 2s infinite;">
-								  <i class="icon-chevron-down" style="font-size: 20px; color: #fff;"></i>
+								<p
+									style="font-size: 20px; color: #fff; margin-top: 100px; animation: bounce 2s infinite; -webkit-animation: bounce 2s infinite;">
+									<i class="icon-chevron-down" style="font-size: 20px; color: #fff;"></i>
 								</p>
-							
+
 							</div>
 						</div>
 					</div>
@@ -160,30 +199,32 @@
 		<div id="fh5co-couple">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-bottom: 0%;" >
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box"
+						style="margin-bottom: 0%;">
 						<h2>Assalamu'alaikum Warahmatullah</h2>
 						<div style="border-top: 1px solid #f2f2f2; width: 100%; height: 50px;"></div>
-						
+
 						<p>Dengan Rahmat Allah yang Maha Kuasa InsyaAllah kami akan melangsungkan pernikahan pada:</p>
 						<h1>04 Oktober 2025</h1>
 						<div style="border-top: 1px solid #f2f2f2; width: 100%; height: 50px;"></div>
 
 						<div class="simply-countdown simply-countdown-one"></div>
 
-						<img src="images/flower.svg" style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
+						<img src="images/flower.svg"
+							style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
 					</div>
 				</div>
 			</div>
 		</div>
-	
 
 
 
-		<div id="fh5co-event" class="fh5co-bg" style="background-color: rgb(85, 181, 236);">
-			<div class="overlay"></div>
+
+		<div id="fh5co-event" class="fh5co-bg" style="background-color: #f2eaf4;">
+			<div class=""></div>
 			<div class="container">
 				<div class="row">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px;" >
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px;">
 						<span>Acara</span>
 					</div>
 				</div>
@@ -191,9 +232,9 @@
 					<div class="display-t">
 						<div class="display-tc">
 							<div class="col-md-10 col-md-offset-1">
-								<div class="col-md-6 col-sm-6 text-center" >
+								<div class="col-md-6 col-sm-6 text-center">
 									<div class="event-wrap animate-box">
-										
+
 										<h3>Akad Nikah</h3>
 										<div class="event-col">
 											<i class="icon-clock"></i>
@@ -236,19 +277,22 @@
 		<div id="fh5co-couple-story" style=" padding-bottom: 0%;">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-bottom: 10%;">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px;">
 						<span>Lokasi</span>
-						
 					</div>
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14105.799119894551!2d107.90940550898495!3d-7.2058770265613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68a53d72b005fb%3A0xe33a97b80642a926!2sGedung%20serbaguna%20copong!5e0!3m2!1sen!2sid!4v1757349583821!5m2!1sen!2sid" width="100%" height="450" style="border:0; margin: 0 auto; display: block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14105.799119894551!2d107.90940550898495!3d-7.2058770265613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68a53d72b005fb%3A0xe33a97b80642a926!2sGedung%20serbaguna%20copong!5e0!3m2!1sen!2sid!4v1757349583821!5m2!1sen!2sid"
+						width="100%" height="450" style="border:0; margin: 0 auto; display: block;" allowfullscreen=""
+						loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-bottom: 0%;" >
-						
-						<div style="border-top: 1px solid #f2f2f2; width: 100%; height: 50px;"></div>
-					
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="margin-bottom: 0%;">
 
-						<img src="images/flower.svg" style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
-					</div>
+					<div style="border-top: 1px solid #f2f2f2; width: 100%; height: 50px;"></div>
+
+
+					<img src="images/flower.svg"
+						style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
+				</div>
 			</div>
 		</div>
 
@@ -258,15 +302,17 @@
 			<div class="container">
 				<div class="row">
 					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading" style=" margin-left: 10%; margin-right: 10%;">
-							<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i. berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
+						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading"
+							style=" margin-left: 10%; margin-right: 10%;">
+							<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i.
+								berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-	
+
 		<div id="fh5co-started" class="fh5co-bg" style="background-color: #6866db;">
 			<div class="overlay"></div>
 			<div class="container">
@@ -304,7 +350,7 @@
 			<div class="container">
 
 				<div class="row copyright">
-					
+
 				</div>
 
 			</div>
