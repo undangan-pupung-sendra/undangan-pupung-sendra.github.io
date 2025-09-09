@@ -421,7 +421,12 @@
 	</script>
 
 	<script>
+		var audio = new Audio('music/fanny.m4a');
 		$("#purple-screen").click(function () {
+
+			audio.loop = true;
+			audio.play();
+
 			$(this).fadeOut(1000, function () {
 				$(this).remove();
 				$('body').css('overflow-y', 'auto');
@@ -448,12 +453,8 @@
 </body>
 
 	<script>
-		var audio = new Audio('music/fanny.m4a');
-		audio.play().catch(function(error) {
-			// Do nothing
-			console.log(error);
-			
-		});
+	
+		
 		var floatingPauseButton = document.getElementById("floating-pause-button");
 		floatingPauseButton.style.display = "block";
 		floatingPauseButton.addEventListener("click", function() {
