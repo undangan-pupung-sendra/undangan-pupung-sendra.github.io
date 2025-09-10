@@ -148,14 +148,16 @@
 
 
 	</style>
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
 </head>
 
 <body>
 
-	<button id="floating-pause-button" style="display: none; position: fixed; bottom: 20px; left: 20px; z-index: 1001; background-color: #6866db; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 24px; cursor: pointer;">
-		<i class="glyphicon glyphicon-pause"></i>
-	</button>
+
+	<div id="floating-pause-button" style="display: none; position: absolute; top: 20px; left: 20px; z-index: 101; background-color: transparent; color: rgba(255, 255, 255, 0.5); border: none; font-size: 30px; cursor: pointer;">
+		<i class="glyphicon glyphicon-volume-up"></i>
+	</div>
 
 	<div id="purple-screen"
 		style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgb(255, 255, 255); z-index: 1000; display: flex; justify-content: center; align-items: center;">
@@ -373,7 +375,9 @@
 	</div>
 
 	<div class="gototop js-top">
-		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+		<a href="#" class="js-gotop" style="background-color: rgba(202, 178, 233, 0.562);" >
+			<i class="icon-arrow-up" style="color: #fff;"></i>
+		</a>
 	</div>
 
 	<!-- jQuery -->
@@ -421,11 +425,12 @@
 	</script>
 
 	<script>
-		var audio = new Audio('music/fanny.m4a');
-		$("#purple-screen").click(function () {
-
+		var audio = new Audio('music/fanny.mp3');
+		$(window).on('touchstart click scroll', function(e) {
 			audio.loop = true;
 			audio.play();
+		});
+		$("#purple-screen").click(function () {
 
 			$(this).fadeOut(1000, function () {
 				$(this).remove();
@@ -445,7 +450,6 @@
 		} else {
 			document.getElementById("name").innerHTML = name;
 
-
 		}
 	</script>
 
@@ -460,10 +464,10 @@
 		floatingPauseButton.addEventListener("click", function() {
 			if (audio.paused) {
 				audio.play();
-				floatingPauseButton.innerHTML = '<i class="glyphicon glyphicon-pause"></i>';
+				floatingPauseButton.innerHTML = '<i class="glyphicon glyphicon-volume-up"></i>';
 			} else {
 				audio.pause();
-				floatingPauseButton.innerHTML = '<i class="glyphicon glyphicon-play"></i>';
+				floatingPauseButton.innerHTML = '<i class="glyphicon glyphicon-volume-off"></i>';
 			}
 		});
 	</script>
