@@ -426,11 +426,10 @@
 
 	<script>
 		var audio = new Audio('music/fanny.mp3');
-		$(window).on('touchstart click scroll', function(e) {
+		$("#purple-screen").click(function () {
+
 			audio.loop = true;
 			audio.play();
-		});
-		$("#purple-screen").click(function () {
 
 			$(this).fadeOut(1000, function () {
 				$(this).remove();
