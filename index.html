@@ -165,6 +165,12 @@
 			cursor: pointer;
 			border-radius: 5px;
 		}
+
+		@media only screen and (max-width: 719px) {
+			.img-responsive img {
+				max-width: 100vw;
+			}
+		}
 	</style>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 
@@ -247,7 +253,7 @@
 						<div class="simply-countdown simply-countdown-one"></div>
 
 						<img src="images/flower.svg"
-							style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
+							style="width: 60%; object-fit: cover; object-position: center;" />
 					</div>
 				</div>
 			</div>
@@ -256,17 +262,17 @@
 
 
 
-		<div id="fh5co-event" class="fh5co-bg" style="background-color: #f2eaf4;">
+		<div id="fh5co-event" class="fh5co-bg" style="background-color: #f2eaf4; height: fit-content;">
 			<div class=""></div>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px;">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px; font-family: 'seasons', serif;">
 						<span>Acara</span>
 					</div>
 				</div>
 				<div class="row">
-					<div class="display-t">
-						<div class="display-tc">
+					<div class="">
+						<div class="">
 							<div class="col-md-10 col-md-offset-1">
 								<div class="col-md-6 col-sm-6 text-center">
 									<div class="event-wrap animate-box">
@@ -313,7 +319,7 @@
 		<div id="fh5co-couple-story" style=" padding-bottom: 0%;">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px;">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box" style="height: 10px; font-family: 'seasons', serif;">
 						<span>Lokasi</span>
 					</div>
 					<iframe
@@ -327,7 +333,7 @@
 
 
 					<img src="images/flower.svg"
-						style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
+						style="width: 60%; object-fit: cover; object-position: center;" />
 					<div style="border-top: 0px solid #f2f2f2; width: 100%; height: 50px;"></div>
 
 				</div>
@@ -343,84 +349,77 @@
 			<div class="container">
 				<div class="row animate-box">
 					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-						<span>Kirim Kado</span>
+						<span style="font-family: 'seasons', serif;">Kirim Kado</span>
 						<br>
 						<br>
 
-						<div style="border-top: 1px solid #ffffff8a; width: 100%; height: 50px;"></div>
+						<div style="border-top: 1px solid #ffffff8a; width: 100%; height: 20px;"></div>
 
-						<p>Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado
+						<p style="color: #fff;">Terima kasih atas doa dan restu yang telah anda berikan, jika anda ingin mengirimkan kado
 							nikah, silahkan kirim dengan cara dibawah ini. Sebelumnya, kami mengucapkan banyak terima
 							kasih.</p>
 					</div>
 				</div>
 				<div class="row animate-box" style="margin-top:30px;">
 					<div class="col-md-6">
-						<div class="panel panel-default" style="margin-bottom:20px;">
-							<div class="panel-heading">
-								<div class="text-center">
-									<img src="images/logo_bni.png" alt="logo-bni" style="height: 50px; margin: 0 auto;">
-								</div>
-							</div>
-							<div class="panel-body text-center">
-								<h5><strong>Nomor Rekening</strong></h5>
-								<p><strong>0350074507</strong></p>
-								<h5><strong>Atas Nama</strong></h5>
-								<p><strong>Pupung Pundenswari</strong></p>
-								<button class="copybtn" onclick="copyRekening('0350074507')">
-									<i class="icon-copy"></i> Copy
-								</button>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
+						
+						<div class="panel panel-default" style="border-radius: 20px;">
+							<div class="panel-heading" style="border-radius: 20px;">
 								<div class="text-center">
 									<img src="images/logo_gopay.png" alt="logo-gopay"
 										style="height: 50px; margin: 0 auto;">
 								</div>
 							</div>
 							<div class="panel-body text-center">
-								<h5><strong>Nomor Rekening</strong></h5>
+								<h5 style="margin: 0;"><strong>Nomor Rekening</strong></h5>
 								<p><strong>085223761897</strong></p>
-								<h5><strong>Atas Nama</strong></h5>
+								<h5 style="margin: 0;"><strong>Atas Nama</strong></h5>
 								<p><strong>Pupung Pundenswari</strong></p>
 								<button class="copybtn" onclick="copyRekening('085223761897')">
 									<i class="icon-copy"></i> Copy
 								</button>
 							</div>
 						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="panel panel-default">
-							<div class="panel-heading">
-								<div class="text-center">
-									<img src="images/logo_bni.png" alt="logo-mandiri"
-										style="height: 50px; margin: 0 auto;">
-								</div>
-							</div>
-							<div class="panel-body text-center">
-								<h5><strong>Nomor Rekening</strong></h5>
-								<p><strong>620327238</strong></p>
-								<h5><strong>Atas Nama</strong></h5>
-								<p><strong>Sendra Ilham Mandala</strong></p>
-								<button class="copybtn" onclick="copyRekening('620327238')">
-									<i class="icon-copy"></i> Copy
-								</button>
-							</div>
-						</div>
-						<div class="panel panel-default">
-							<div class="panel-heading">
+						<div class="panel panel-default" style="border-radius: 20px;">
+							<div class="panel-heading" style="border-radius: 20px;">
 								<div class="text-center">
 									<img src="images/logo_dana.png" alt="logo-mandiri"
 										style="height: 50px; margin: 0 auto;">
 								</div>
 							</div>
 							<div class="panel-body text-center">
-								<h5><strong>Nomor Rekening</strong></h5>
+								<h5 style="margin: 0;"><strong>Nomor Rekening</strong></h5>
 								<p><strong>0895341983339</strong></p>
-								<h5><strong>Atas Nama</strong></h5>
+								<h5 style="margin: 0;"><strong>Atas Nama</strong></h5>
 								<p><strong>Sendra Ilham Mandala</strong></p>
 								<button class="copybtn" onclick="copyRekening('0895341983339')">
+									<i class="icon-copy"></i> Copy
+								</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default" style="margin-bottom:20px; border-radius: 20px;">
+							<div style="border-radius: 20px;" class="panel-heading">
+								<div class="text-center">
+									<img src="images/logo_bni.png" alt="logo-bni" style="height: 50px; margin: 0 auto;">
+								</div>
+							</div>
+							<div class="panel-body text-center">
+								<h5 style="margin: 0;"><strong>Nomor Rekening</strong></h5>
+								<p><strong>0350074507</strong></p>
+								<h5 style="margin: 0;"><strong>Atas Nama</strong></h5>
+								<p><strong>Pupung Pundenswari</strong></p>
+								<button class="copybtn" onclick="copyRekening('0350074507')">
+									<i class="icon-copy"></i> Copy
+								</button>
+							</div>
+							<div class="panel-body text-center">
+								<h5 style="margin: 0;"><strong>Nomor Rekening</strong></h5>
+								<p><strong>620327238</strong></p>
+								<h5 style="margin: 0;"><strong>Atas Nama</strong></h5>
+								<p><strong>Sendra Ilham Mandala</strong></p>
+								<button class="copybtn" onclick="copyRekening('620327238')">
 									<i class="icon-copy"></i> Copy
 								</button>
 							</div>
@@ -434,14 +433,14 @@
 			<div class="container">
 				<div class="row">
 					<div class="row animate-box">
-						<div class="col-md-8 col-md-offset-2 text-center fh5co-heading"
+						<div class="text-center fh5co-heading"
 							style=" margin-left: 10%; margin-right: 10%;">
 							<img src="images/flower.svg"
-								style="width: 60%; height: 100px; object-fit: cover; object-position: center;" />
+								style="width: 60%; object-fit: cover; object-position: center;" />
 							<div style="border-top: 0px solid #f2f2f2; width: 100%; height: 50px;"></div>
 
-							<p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i.
-								berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</p>
+							<h3>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila, Bapak / Ibu / Saudara / i.
+								berkenan hadir untuk memberikan do'a restunya kami ucapkan terimakasih.</h3>
 						</div>
 					</div>
 				</div>
@@ -449,16 +448,21 @@
 		</div>
 
 		<div id="fh5co-started" class="fh5co-bg" style="background-color: #ffffff; margin-top: 200px; padding: 0;">
-
-			<img src="images/anime.jpg" style="width: 100%;">
+			<div style="text-align: center;">
+				<img class="img-responsive" src="images/anime.jpg" style="display: inline-block;">
+			</div>
 
 		</div>
+
+
+		
 
 		<div id="fh5co-started" class="fh5co-bg" style="background-color: #ffffff; margin-top: 500px; padding: 0;">
 
 			<img src="images/wed2.jpg" style="width: 100%;">
 
 		</div>
+
 
 		<div class="gototop js-top">
 			<a href="#" class="js-gotop" style="background-color: rgba(202, 178, 233, 0.562);">
